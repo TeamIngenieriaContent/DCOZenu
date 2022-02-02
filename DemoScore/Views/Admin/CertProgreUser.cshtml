@@ -1,0 +1,32 @@
+﻿@using ReportViewerForMvc;
+@using DemoScore.Models.ViewModel;
+@model AdminReports
+@{
+    ViewBag.Title = "CertProgreUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body class="" style="background-image:url(../../Content/Imagenes/background-loading.jpg)">
+    <br />
+    <div class="row">
+        <div class="col-md-6" >
+            <h1 style="font-weight:800; color: #ffffff !important">TU CERTIFICADO DE PROGRESO</h1>
+        </div>
+        <div class="col-md-6" style="height:50px; left:18%">
+            <a href="@Url.Action("Instructions","ViewGameUser", new { Id = Model.settin })"><input type="button" class="btn btn-warning" value="Regresar" style="background-color:#E96625; font-weight:600; color:#000000" /></a>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <div class="row">
+            <label class="text-danger">@ViewBag.TextError</label>
+        </div>
+        @if (ViewBag.ReportViewer != null)
+        {
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="overflow-x:scroll; height:60vh; left:18%; background-color:#ffffff; margin-left:10%">
+                    @Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer, new { scrolling = "si", style = "width: 65%; height: 100%; " })
+                </div>
+            </div>
+        }
+    </div>
+</body>

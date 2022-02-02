@@ -34,6 +34,9 @@ namespace DemoScore.Models.ViewModel
     public class AdminReports 
     {
         public int company_Id { get; set;}
+        public string user_id { get; set;}
+
+        public int settin { get; set; }
     }
 
     public class Resultadosusuario

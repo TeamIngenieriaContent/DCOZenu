@@ -118,11 +118,15 @@ namespace DemoScore.Controllers
         }
 
         [Authorize]
-        public ActionResult Report(int CompanyId)
+        public ActionResult Report(int CompanyId, string UserId, int SettId)
         {
+            UserId = User.Identity.GetUserId();
+
             AdminReports model = new AdminReports
             {
-                company_Id = CompanyId
+                company_Id = CompanyId,
+                user_id = UserId,
+                settin= SettId
             };
             return View("Report", model);
         }
@@ -233,7 +237,54 @@ namespace DemoScore.Controllers
             return View("Report", model);
             
         }
+        public ActionResult ReporteCertProcessUser(string id)
+        {
 
+            ReportViewer reportViewer =
+                   new ReportViewer()
+                   {
+                       ProcessingMode = ProcessingMode.Local,
+                       SizeToReportContent = true,
+                       Width = Unit.Percentage(100),
+                       Height = Unit.Percentage(100),
+                   };
+            dcodemoscoreDataSetBD.PROC_CERT_PROCESS_USERDataTable data = new dcodemoscoreDataSetBD.PROC_CERT_PROCESS_USERDataTable();
+            PROC_CERT_PROCESS_USERTableAdapter adapter = new PROC_CERT_PROCESS_USERTableAdapter();
+
+            dcodemoscoreDataSetBD.PROC_FORT_COMPE_USERDataTable data2 = new dcodemoscoreDataSetBD.PROC_FORT_COMPE_USERDataTable();
+            PROC_FORT_COMPE_USERTableAdapter adapter2 = new PROC_FORT_COMPE_USERTableAdapter();
+
+            adapter.Fill(data, id);
+            adapter2.Fill(data2, id);
+            if (data != null && data.Rows.Count > 0)
+            {
+                reportViewer.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Cert_Process_User", data.CopyToDataTable()));
+                reportViewer.LocalReport.ReportPath = Request.MapPath(Request.ApplicationPath) + @"\Reports\Cert_Process_User.rdlc";
+                ViewBag.ReportViewer = reportViewer;
+                if (data2 != null && data2.Rows.Count > 0)
+                {
+                    reportViewer.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Proc_Fort_Compe_User", data2.CopyToDataTable()));
+                    reportViewer.LocalReport.ReportPath = Request.MapPath(Request.ApplicationPath) + @"\Reports\Cert_Process_User.rdlc";
+                    ViewBag.ReportViewer = reportViewer;
+                }
+            }
+            else
+            {
+                //Message("No se encontraron datos para el informe con los filtros utilizados, por favor utilice otros filtros", MessageType.Info);
+            }
+            ViewBag.reports = true;
+            var user = UserManager.FindById(id);
+            var company = user.CompanyId;
+            var set = ApplicationDbContext.MG_SettingMps.FirstOrDefault(x => x.Company_Id == company);
+            AdminReports model = new AdminReports
+            {
+                user_id = id,
+                settin = set.Sett_Id
+            };
+
+            return View("CertProgreUser", model);
+
+        }
         public ActionResult Reporteresultadoscategorias(int id)
         {
 

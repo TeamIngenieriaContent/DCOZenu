@@ -1025,6 +1025,7 @@ D:\Content\Proyectos\DCOCompetenciasEstrategicas\DemoScore\obj\Debug\DemoScore.M
 D:\Content\Proyectos\DCOCompetenciasEstrategicas\DemoScore\obj\Debug\DemoScore.csprojAssemblyReference.cache
 C:\Inetpub\wwwroot\Plataforma DCO Competencias Estrategicas\DCOCompetenciasEstrategicas\DemoScore\obj\Debug\DemoScore.Migrations.uno.resources
 C:\Inetpub\wwwroot\Plataforma DCO Competencias Estrategicas\DCOCompetenciasEstrategicas\DemoScore\obj\Debug\DemoScore.csproj.GenerateResource.cache
+D:\Proyectos NET\DCOZenu\DemoScore\bin\Microsoft.VisualStudio.Shell.Interop.dll
 D:\Proyectos NET\DCOZenu\DemoScore\bin\ApplicationInsights.config
 D:\Proyectos NET\DCOZenu\DemoScore\bin\SqlServerTypes\x64\msvcr120.dll
 D:\Proyectos NET\DCOZenu\DemoScore\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
@@ -1093,7 +1094,6 @@ D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.WebPages.dll
 D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.WebPages.Razor.dll
 D:\Proyectos NET\DCOZenu\DemoScore\bin\WebGrease.dll
 D:\Proyectos NET\DCOZenu\DemoScore\bin\EnvDTE.dll
-D:\Proyectos NET\DCOZenu\DemoScore\bin\Microsoft.VisualStudio.Shell.Interop.dll
 D:\Proyectos NET\DCOZenu\DemoScore\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
 D:\Proyectos NET\DCOZenu\DemoScore\bin\EnvDTE80.dll
 D:\Proyectos NET\DCOZenu\DemoScore\bin\Microsoft.ReportViewer.Common.dll
@@ -1140,12 +1140,12 @@ D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.Razor.xml
 D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.WebPages.xml
 D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.WebPages.Deployment.xml
 D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.WebPages.Razor.xml
+D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csprojAssemblyReference.cache
+D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.Migrations.uno.resources
+D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.GenerateResource.cache
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\RdlCompile.cache
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\RdlCompile.compiled
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.CoreCompileInputs.cache
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.CopyComplete
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.dll
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.pdb
-D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csprojAssemblyReference.cache
-D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.Migrations.uno.resources
-D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.GenerateResource.cache

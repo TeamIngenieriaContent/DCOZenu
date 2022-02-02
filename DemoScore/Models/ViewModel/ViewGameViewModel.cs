@@ -26,6 +26,8 @@ namespace DemoScore.Models.ViewModel
         public List<MultipleChoiceDificil> listquestionsDificil { get; set; }
         public List<listranking> ListRanking { get; set; }
 
+        public AdminReports AdminReports { get; set; }
+
     }
 
     public class UserGame 
