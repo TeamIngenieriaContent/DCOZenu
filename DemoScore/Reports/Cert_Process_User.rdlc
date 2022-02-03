@@ -653,7 +653,7 @@
         <Top>24.08604cm</Top>
         <Left>2.71731cm</Left>
         <Height>0.6cm</Height>
-        <Width>16.09896cm</Width>
+        <Width>16.09897cm</Width>
         <ZIndex>12</ZIndex>
         <Style>
           <Border>
@@ -748,7 +748,7 @@
                 <Style>
                   <FontStyle>Normal</FontStyle>
                   <FontFamily>Century Gothic</FontFamily>
-                  <FontSize>11pt</FontSize>
+                  <FontSize>12pt</FontSize>
                   <FontWeight>Normal</FontWeight>
                   <TextDecoration>None</TextDecoration>
                   <Color>#000000</Color>
@@ -759,7 +759,7 @@
                 <Style>
                   <FontStyle>Normal</FontStyle>
                   <FontFamily>Century Gothic</FontFamily>
-                  <FontSize>11pt</FontSize>
+                  <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <TextDecoration>None</TextDecoration>
                   <Color>#000000</Color>
@@ -872,7 +872,7 @@
         <Top>20.84021cm</Top>
         <Left>6.15884cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>6.48643cm</Width>
         <ZIndex>18</ZIndex>
         <Style>
           <Border>
@@ -904,7 +904,7 @@
         <Top>22.00438cm</Top>
         <Left>7.72203cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>11.09424cm</Width>
         <ZIndex>19</ZIndex>
         <Style>
           <Border>
@@ -939,7 +939,7 @@
         <Top>25.53656cm</Top>
         <Left>13.77821cm</Left>
         <Height>0.6cm</Height>
-        <Width>2.20896cm</Width>
+        <Width>4.1589cm</Width>
         <ZIndex>20</ZIndex>
         <Style>
           <Border>
@@ -973,9 +973,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox92</rd:DefaultName>
         <Top>25.53656cm</Top>
-        <Left>15.98717cm</Left>
+        <Left>17.93711cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.85959cm</Width>
+        <Width>0.87917cm</Width>
         <ZIndex>21</ZIndex>
         <Style>
           <Border>
@@ -995,7 +995,7 @@
               <Width>1.44167cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>8.4863cm</Width>
+              <Width>14.65729cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1091,7 +1091,7 @@
         <Top>29.04808cm</Top>
         <Left>2.71731cm</Left>
         <Height>0.6cm</Height>
-        <Width>9.92796cm</Width>
+        <Width>16.09896cm</Width>
         <ZIndex>22</ZIndex>
         <Style>
           <Border>
