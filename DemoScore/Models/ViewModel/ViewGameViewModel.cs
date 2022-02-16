@@ -45,6 +45,7 @@ namespace DemoScore.Models.ViewModel
         public ApplicationUser User { get; set; }
         public MG_SettingMp setting { get; set; }
         public int Sett_Id { get; set; }
+        public int Company_Id { get; set; }
         public int facil { get; set; }
         public int medio { get; set; }
         public int dificil { get; set; }

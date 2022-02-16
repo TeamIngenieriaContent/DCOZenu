@@ -2,17 +2,34 @@
 @using DemoScore.Models.ViewModel;
 @model AdminReports
 @{
-    ViewBag.Title = "CertProgreUser";
+    ViewBag.Title = "Reporte Progreso";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
 <body class="" style="background-image:url(../../Content/Imagenes/background-loading.jpg)">
     <br />
     <div class="row">
-        <div class="col-md-6" >
+        <div class="col-md-6">
             <h1 style="font-weight:800; color: #ffffff !important">REPORTE DE PROGRESO</h1>
         </div>
         <div class="col-md-6" style="height:50px; left:18%">
             <a href="@Url.Action("Instructions","ViewGameUser", new { Id = Model.settin })"><input type="button" class="btn btn-warning" value="Regresar" style="background-color:#E96625; font-weight:600; color:#000000" /></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="text-align:left; padding-left: 18%">
+            <h1 style="font-weight:800; color: #ffffff !important">Información:</h1><h1 style="font-weight:400; color: #ffffff !important"> Puedes descargar el reporte de tus resultados en un archivo Word o Excel, mediante el siguiente icono <img style="height:20px" src="~/Content/Imagenes/floppy-disk.png" /> el cual<br /> encuentras arriba del reporte de tu progreso.</h1>
         </div>
     </div>
     <hr />
@@ -24,7 +41,7 @@
         {
             <div class="row">
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="overflow-x:scroll; height:60vh; left:18%; background-color:#ffffff; margin-left:10%">
-                    @Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer, new { scrolling = "si", style = "width: 65%; height: 100%; " })
+                    @Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer, new { scrolling = "si", style = "width: 45%; height: 100%; " })
                 </div>
             </div>
         }

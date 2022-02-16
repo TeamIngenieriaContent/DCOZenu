@@ -390,7 +390,7 @@
                             <a class="boton" onclick="eliminarCookies()" ;>Regresar</a>
                         </div>
                         <div class="col-md-6" style="text-align:center; ">
-                            <h2 style="margin-top: 3.4%;">@Html.ActionLink("Reporte de Progreso", "ReporteCertProcessUser", "Admin", new { ReturnUrl = ViewBag.ReturnUrl, id = @Model.User_Id, SettId = @Model.Sett_Id }, new { @class = "boton", role = "form", @style = "" })</h2>
+                            <h2 style="margin-top: 3.4%;">@Html.ActionLink("Reporte de Progreso", "ReporteCertProcessUser", "Admin", new { ReturnUrl = ViewBag.ReturnUrl, userid = @Model.User_Id, SettId = @Model.Sett_Id, id = Model.Company_Id }, new { @class = "boton", role = "form", @style = "" })</h2>
                         </div>
                     </div>
                 }

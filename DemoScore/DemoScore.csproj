@@ -249,10 +249,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202202022038313_inicial.cs" />
-    <Compile Include="Migrations\202202022038313_inicial.Designer.cs">
-      <DependentUpon>202202022038313_inicial.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Game\Area.cs" />
     <Compile Include="Models\Game\Cargo.cs" />
@@ -297,6 +293,7 @@
     <Content Include="Content\Imagenes\background-zenu.jpg" />
     <Content Include="Content\Imagenes\banner1.jpg" />
     <Content Include="Content\Imagenes\favicon.ico" />
+    <Content Include="Content\Imagenes\floppy-disk.png" />
     <Content Include="Content\Imagenes\Gif.gif" />
     <Content Include="Content\Imagenes\LOGO DCO-15.png" />
     <Content Include="Content\Imagenes\logo-header.png" />
@@ -602,9 +599,6 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202202022038313_inicial.resx">
-      <DependentUpon>202202022038313_inicial.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cert_Process_User.rdlc" />
     <EmbeddedResource Include="Reports\Rep_Category.rdlc">
       <SubType>Designer</SubType>

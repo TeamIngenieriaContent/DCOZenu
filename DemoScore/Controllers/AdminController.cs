@@ -102,11 +102,13 @@ namespace DemoScore.Controllers
                 foreach (var item in Companies)
                 {
                     int user = ApplicationDbContext.Users.Where(X => X.CompanyId == item.CompanyId).ToList().Count();
+                    int sett = ApplicationDbContext.MG_SettingMps.Where(x => x.Company_Id == item.CompanyId).ToList().Count();
                     listcompany.Add(new infocompany
                     {
                         CompanyId = item.CompanyId,
                         CompanyName = item.CompanyName,
-                        CompanyUser = user
+                        CompanyUser = user,
+                        SettId = sett
                     });
                 }
             }
@@ -237,7 +239,7 @@ namespace DemoScore.Controllers
             return View("Report", model);
             
         }
-        public ActionResult ReporteCertProcessUser(string id)
+        public ActionResult ReporteCertProcessUser(string userid, int id)
         {
 
             ReportViewer reportViewer =
@@ -254,8 +256,8 @@ namespace DemoScore.Controllers
             dcodemoscoreDataSetBD.PROC_FORT_COMPE_USERDataTable data2 = new dcodemoscoreDataSetBD.PROC_FORT_COMPE_USERDataTable();
             PROC_FORT_COMPE_USERTableAdapter adapter2 = new PROC_FORT_COMPE_USERTableAdapter();
 
-            adapter.Fill(data, id);
-            adapter2.Fill(data2, id);
+            adapter.Fill(data, userid);
+            adapter2.Fill(data2, userid);
             if (data != null && data.Rows.Count > 0)
             {
                 reportViewer.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Cert_Process_User", data.CopyToDataTable()));
@@ -273,16 +275,19 @@ namespace DemoScore.Controllers
                 //Message("No se encontraron datos para el informe con los filtros utilizados, por favor utilice otros filtros", MessageType.Info);
             }
             ViewBag.reports = true;
-            var user = UserManager.FindById(id);
+            
+            var user = UserManager.FindById(userid);
             var company = user.CompanyId;
             var set = ApplicationDbContext.MG_SettingMps.FirstOrDefault(x => x.Company_Id == company);
+            
             AdminReports model = new AdminReports
             {
-                user_id = id,
-                settin = set.Sett_Id
+                user_id = userid,
+                settin = set.Sett_Id,
+                company_Id = id                
             };
-
             return View("CertProgreUser", model);
+           
 
         }
         public ActionResult Reporteresultadoscategorias(int id)

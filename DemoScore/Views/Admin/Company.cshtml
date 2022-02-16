@@ -49,7 +49,7 @@
                             <tr>
                                 <td>@item.CompanyName</td>
                                 <td>@item.CompanyUser</td>
-                                <td><a href="@Url.Action("Report", "Admin", new {CompanyId = @item.CompanyId})" class="btn btn-primary">Ingresar</a></td>
+                                <td><a href="@Url.Action("Report", "Admin", new {CompanyId = @item.CompanyId, SettId = @item.SettId })" class="btn btn-primary">Ingresar</a></td>
                             </tr>
                         }
 

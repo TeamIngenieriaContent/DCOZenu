@@ -1140,9 +1140,6 @@ D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.Razor.xml
 D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.WebPages.xml
 D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.WebPages.Deployment.xml
 D:\Proyectos NET\DCOZenu\DemoScore\bin\System.Web.WebPages.Razor.xml
-D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csprojAssemblyReference.cache
-D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.Migrations.uno.resources
-D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.GenerateResource.cache
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\RdlCompile.cache
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\RdlCompile.compiled
 D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.CoreCompileInputs.cache
@@ -1274,3 +1271,4 @@ C:\Inetpub\wwwroot\Plataforma DCO Zenu\DCOZenu\DemoScore\obj\Debug\DemoScore.csp
 C:\Inetpub\wwwroot\Plataforma DCO Zenu\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.CopyComplete
 C:\Inetpub\wwwroot\Plataforma DCO Zenu\DCOZenu\DemoScore\obj\Debug\DemoScore.Migrations.inicial.resources
 C:\Inetpub\wwwroot\Plataforma DCO Zenu\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.GenerateResource.cache
+D:\Proyectos NET\DCOZenu\DemoScore\obj\Debug\DemoScore.csproj.AssemblyReference.cache
