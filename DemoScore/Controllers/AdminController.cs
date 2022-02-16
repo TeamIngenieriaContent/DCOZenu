@@ -108,7 +108,7 @@ namespace DemoScore.Controllers
                         CompanyId = item.CompanyId,
                         CompanyName = item.CompanyName,
                         CompanyUser = user,
-                        SettId = sett
+                        SettId = sett                        
                     });
                 }
             }
@@ -275,7 +275,6 @@ namespace DemoScore.Controllers
                 //Message("No se encontraron datos para el informe con los filtros utilizados, por favor utilice otros filtros", MessageType.Info);
             }
             ViewBag.reports = true;
-            
             var user = UserManager.FindById(userid);
             var company = user.CompanyId;
             var set = ApplicationDbContext.MG_SettingMps.FirstOrDefault(x => x.Company_Id == company);
@@ -284,7 +283,7 @@ namespace DemoScore.Controllers
             {
                 user_id = userid,
                 settin = set.Sett_Id,
-                company_Id = id                
+                company_Id = id
             };
             return View("CertProgreUser", model);
            

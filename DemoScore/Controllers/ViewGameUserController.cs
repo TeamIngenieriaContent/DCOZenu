@@ -161,7 +161,7 @@ namespace DemoScore.Controllers
             {
                 setting = setting,
                 Sett_Id = setting.Sett_Id,
-                Company_Id= setting.Company_Id,
+                Company_Id = setting.Company_Id,
                 contador = countattempnivel,
                 User_Id = useractual.Id,
                 attemptUser = nivelattemp,

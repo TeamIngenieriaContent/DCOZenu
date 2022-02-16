@@ -74,12 +74,12 @@
 
     <h4>@Html.ActionLink("RDLC", "ReportByCompany", "Admin", new { ReturnUrl = ViewBag.ReturnUrl, id = @Model.company_Id }, new { @class = "", role = "form", @style = "background-color:transparent;color:#000;" })</h4>
          -->
-    <div class="col-md-4">
+    @*<div class="col-md-4">
         <a href='@Url.Action("ReporteCertProcessUser", "Admin", new {id =@Model.user_id})'>
             <img src='@Url.Content("~/Content/Imagenes/usuarios_registrados.png")' style="width:70%; height:80%;" />
         </a>
         <h4>@Html.ActionLink("Certificado usuario", "ReporteCertProcessUser", "Admin", new { ReturnUrl = ViewBag.ReturnUrl, userid = @Model.user_id }, new { @class = "", role = "form", @style = "background-color:transparent;color:#000;" })</h4>
-    </div>
+    </div>*@
     <div class="col-md-12">
         <br />
     </div>
