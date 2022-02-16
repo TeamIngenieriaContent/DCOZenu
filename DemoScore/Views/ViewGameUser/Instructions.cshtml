@@ -335,7 +335,7 @@
         <div class="col-md-3"></div>
         <div class="col-md-6" style="align-content:center">
             <div style="background: #E966255c; margin-top:5%; margin-bottom:10%; padding: 20px; text-align:left; align-content:center">
-
+                <br /><br />
                 <h1 style="text-align:center"><strong>¡Es tiempo de conocer el nivel de desarrollo de sus Talentos!</strong></h1><br />
                 <br />
                 <h1>
@@ -346,9 +346,9 @@
                     <b>•	Casi siempre</b> se comportas así.<br />
                     <b>•	Pocas veces</b> se comportas así.<br />
                     <b>•	Nunca</b> se comportas así.<br />
-                    <br />
+                    <br /> <br />
                     <center>Es muy importante que sea muy sincero en sus respuestas pues de eso depende que le enviemos los tips de fortalecimiento de sus Talentos.</center>
-                    <br />
+                    <br /> <br />
                 </h1>
                 @*
                     <h1> <a href="~/Content/Doc_DCO/Competencias_ciudadanas-Pregunta2.pdf" download="Competencias Ciudadanas - Pregunta 2.pdf">Descargar Pregunta 2 - Competencias Ciudadanas</a></h1>
@@ -390,7 +390,7 @@
                             <a class="boton" onclick="eliminarCookies()" ;>Regresar</a>
                         </div>
                         <div class="col-md-6" style="text-align:center; ">
-                            <h2 style="margin-top: 3.4%;">@Html.ActionLink("Reporte de Progreso", "ReporteCertProcessUser", "Admin", new { ReturnUrl = ViewBag.ReturnUrl, id = @Model.User_Id, SettId = @Model.Sett_Id }, new { @class = "boton", role = "form", @style = "" })</h2>
+                            <h2 style="margin-top: 3.4%;">@Html.ActionLink("Resultados", "ReporteCertProcessUser", "Admin", new { ReturnUrl = ViewBag.ReturnUrl, userid = @Model.User_Id, SettId = @Model.Sett_Id, id = Model.Company_Id }, new { @class = "boton", role = "form", @style = "" })</h2>
                         </div>
                     </div>
                 }

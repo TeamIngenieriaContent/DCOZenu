@@ -12,6 +12,7 @@ namespace DemoScore.Models.ViewModel
         public int CompanyId { get; set; }
         public string CompanyName { get; set; }
         public int CompanyUser { get; set; }
+        public int SettId { get; set; }
     }
     public class AdminGeneralViewModel
     {
